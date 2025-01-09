@@ -1,4 +1,4 @@
 source $stdenv/setup
 
 mkdir -p $out
-echo RESULT > $out/result
+cp $src/dummy-submodule/README.md $out/

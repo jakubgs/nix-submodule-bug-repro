@@ -8,6 +8,7 @@
     in {
       packages."x86_64-linux".default = pkgs.stdenv.mkDerivation {
         name = "nix-submodule-bug-repro";
+        src = self;
         builder = ./builder.sh;
       };
     };
